@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js" 
-import { initializeAppCheck, ReCaptchaEnterpriseProvider } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app-check.js/app-check";
+import { initializeAppCheck, ReCaptchaEnterpriseProvider } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app-check.js";
 
 const appSettings={
   databaseURL:"https://realtime-database-6d6fa-default-rtdb.firebaseio.com/"
