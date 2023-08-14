@@ -16,7 +16,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-//const app =initializeApp(appSettings);
 const database = getDatabase(app);
 const shoppingListInDatabase = ref(database, "shoppingList")
 
@@ -24,13 +23,11 @@ const inputFieldElement =document.querySelector('.js-input');
 const addButtonElement =document.querySelector('.js-add-to-cart-button');
 const shoppingListElement = document.querySelector('.js-shopping-list')
 
-
-// Create a ReCaptchaEnterpriseProvider instance using your reCAPTCHA Enterprise
-// site key and pass it to initializeAppCheck().
 const appCheck = initializeAppCheck(app, {
   provider: new ReCaptchaEnterpriseProvider("6Le8LqcnAAAAACYCK-uoCT8y6EOsMuel4FdWTdlv"),
-  isTokenAutoRefreshEnabled: true // Set to true to allow auto-refresh.
+  isTokenAutoRefreshEnabled: true
 });
+
 onValue(shoppingListInDatabase, ((snapshot) =>{
   if(snapshot.exists()){
     let ListArray = Object.entries(snapshot.val());
