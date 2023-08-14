@@ -5,14 +5,26 @@ import { initializeAppCheck, ReCaptchaEnterpriseProvider } from "https://www.gst
 const appSettings={
   databaseURL:"https://realtime-database-6d6fa-default-rtdb.firebaseio.com/"
 }
+const firebaseConfig = {
+  apiKey: "AIzaSyCp6710LAtzerQS5inZQVx1QI7lCLpKFaE",
+  authDomain: "realtime-database-6d6fa.firebaseapp.com",
+  databaseURL: "https://realtime-database-6d6fa-default-rtdb.firebaseio.com",
+  projectId: "realtime-database-6d6fa",
+  storageBucket: "realtime-database-6d6fa.appspot.com",
+  messagingSenderId: "252571650495",
+  appId: "1:252571650495:web:444e4f42b5403b1e1c790a"
+};
 
-const app =initializeApp(appSettings);
+const app = initializeApp(firebaseConfig);
+//const app =initializeApp(appSettings);
 const database = getDatabase(app);
 const shoppingListInDatabase = ref(database, "shoppingList")
 
 const inputFieldElement =document.querySelector('.js-input');
 const addButtonElement =document.querySelector('.js-add-to-cart-button');
 const shoppingListElement = document.querySelector('.js-shopping-list')
+
+
 // Create a ReCaptchaEnterpriseProvider instance using your reCAPTCHA Enterprise
 // site key and pass it to initializeAppCheck().
 const appCheck = initializeAppCheck(app, {
