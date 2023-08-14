@@ -32,5 +32,5 @@ function claerShoppingListElement(){
   shoppingListElement.innerHTML='';
 }
 function appendItemToShoppingListElement(value){
-  shoppingListElement.innerHTML += `<li>${value}</li>`
+  shoppingListElement.innerHTML += `<li class="list-items">${value}</li>`
 }
