@@ -33,7 +33,9 @@ body{
   margin-top: 10px;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
-  box-shadow: 0px 1px  4px rgb(0,0,0,0.2)
+  box-shadow: 0px 1px  4px rgb(0,0,0,0.2);
+  cursor:pointer;
+  
 }
 .shopping-list{
   display: flex;
@@ -42,7 +44,7 @@ body{
   list-style-type: none;
   padding: 0;
 }
-.list-items{
+li{
   font-family: 'Rubik', sans-serif;
   background-color: #FFFDF8;
   font-size: 20px;
@@ -50,5 +52,6 @@ body{
   border-radius: 10px;
   flex-grow:1;
   text-align: center;
-  box-shadow: 0px 1px  4px rgb(0,0,0,0.2)
+  box-shadow: 0px 1px  4px rgb(0,0,0,0.2);
+  cursor:pointer;
 }
