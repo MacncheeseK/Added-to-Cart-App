@@ -19,6 +19,26 @@
         <button class="js-add-to-cart-button add-to-cart-button">Add to Cart</button>
         <ul class="js-shopping-list shopping-list"></ul>
       </div>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCp6710LAtzerQS5inZQVx1QI7lCLpKFaE",
+          authDomain: "realtime-database-6d6fa.firebaseapp.com",
+          databaseURL: "https://realtime-database-6d6fa-default-rtdb.firebaseio.com",
+          projectId: "realtime-database-6d6fa",
+          storageBucket: "realtime-database-6d6fa.appspot.com",
+          messagingSenderId: "252571650495",
+          appId: "1:252571650495:web:444e4f42b5403b1e1c790a"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
       <script src="index.js" type="module"></script>
     </body>
 </html>
