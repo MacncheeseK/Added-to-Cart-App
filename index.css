@@ -1,7 +1,7 @@
 body{
-  
   background-color: #EEF0F4;
-  
+  color:#432000;
+  user-select: none;
 }
 .container{
   display: flex;
@@ -29,13 +29,16 @@ body{
   background-color: #AC485A;
   border: none;
   border-radius: 10px;
-  padding: 15px 90px;
+  padding: 15px;
   margin-top: 10px;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
   box-shadow: 0px 1px  4px rgb(0,0,0,0.2);
   cursor:pointer;
-  
+}
+.add-to-cart-button:hover{
+  background-color: #432000;
+  transition: 0.8s;
 }
 .shopping-list{
   display: flex;
@@ -44,6 +47,7 @@ body{
   list-style-type: none;
   padding: 0;
 }
+
 li{
   font-family: 'Rubik', sans-serif;
   background-color: #FFFDF8;
@@ -54,4 +58,8 @@ li{
   text-align: center;
   box-shadow: 0px 1px  4px rgb(0,0,0,0.2);
   cursor:pointer;
+}
+li:hover{
+  background-color: #FFECC7;
+  transition: 0.8s;
 }

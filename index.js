@@ -14,17 +14,21 @@ const addButtonElement =document.querySelector('.js-add-to-cart-button');
 const shoppingListElement = document.querySelector('.js-shopping-list')
 
 onValue(shoppingListInDatabase, ((snapshot) =>{
-  let ListArray = Object.entries(snapshot.val());
-
-  claerShoppingListElement();
-  ListArray.forEach((item) =>{
-    let currentItem = item;
-    let currentItemID =currentItem[0];
-    let currentItemVlaue=currentItem[1];
-    console.log(currentItemID);
-    
-    appendItemToShoppingListElement(currentItem);
-  })
+  if(snapshot.exists()){
+    let ListArray = Object.entries(snapshot.val());
+    claerShoppingListElement();
+    ListArray.forEach((item) =>{
+      let currentItem = item;
+      let currentItemID =currentItem[0];
+      let currentItemVlaue=currentItem[1];
+      
+      appendItemToShoppingListElement(currentItem);
+    })
+  }else{
+    shoppingListElement.innerHTML='No items here ... yet'
+  }
+  
+  
 }))
 
 addButtonElement.addEventListener('click',()=>{
