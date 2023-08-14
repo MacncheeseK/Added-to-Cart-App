@@ -1,6 +1,6 @@
 body{
-  background-color: #EEF0F4;
-  color:#432000;
+  background-color: #eff5e7;
+  color:#674D8C;
   user-select: none;
 }
 .container{
@@ -15,18 +15,26 @@ body{
 }
 .input-field{
   color: #432000;
-  background-color: #DCE1ED;
+  background-color: #e5f0d5;
+  color:#674D8C;
   border: none;
   border-radius: 10px;
   text-align: center;
   padding: 15px ;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
-  box-shadow: 0px 1px  4px rgb(0,0,0,0.2)
+  box-shadow: 0px 1px  4px rgb(0,0,0,0.2);
+  
+}
+.input-field:focus{
+  
+  outline-style: solid;
+  outline-color: #674D8C;
+  outline-width: 4px;
 }
 .add-to-cart-button{
   color:#FDFDFD;
-  background-color: #AC485A;
+  background-color: #674D8C;
   border: none;
   border-radius: 10px;
   padding: 15px;
@@ -37,7 +45,7 @@ body{
   cursor:pointer;
 }
 .add-to-cart-button:hover{
-  background-color: #432000;
+  background-color: #86c19f;
   transition: 0.8s;
 }
 .shopping-list{
@@ -50,7 +58,7 @@ body{
 
 li{
   font-family: 'Rubik', sans-serif;
-  background-color: #FFFDF8;
+  background-color: #e5f0d5;
   font-size: 20px;
   padding: 15px;
   border-radius: 10px;
@@ -60,6 +68,6 @@ li{
   cursor:pointer;
 }
 li:hover{
-  background-color: #FFECC7;
+  background-color: #A7F2C8;
   transition: 0.8s;
 }
